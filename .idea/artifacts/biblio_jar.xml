@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="biblio:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/</output-path>
+    <root id="archive" name="biblio_jar.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/biblio/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/biblio/META-INF/persistence.xml" />
+      </element>
+      <element id="module-output" name="biblio" />
+    </root>
+  </artifact>
+</component>

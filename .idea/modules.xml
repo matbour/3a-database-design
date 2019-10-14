@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/biblio/biblio.iml" filepath="$PROJECT_DIR$/biblio/biblio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/biblio_client_tester/biblio_client_tester.iml" filepath="$PROJECT_DIR$/biblio_client_tester/biblio_client_tester.iml" />
       <module fileurl="file://$PROJECT_DIR$/stateful/stateful.iml" filepath="$PROJECT_DIR$/stateful/stateful.iml" />
       <module fileurl="file://$PROJECT_DIR$/stateless/stateless.iml" filepath="$PROJECT_DIR$/stateless/stateless.iml" />
       <module fileurl="file://$PROJECT_DIR$/statelessclient/statelessclient.iml" filepath="$PROJECT_DIR$/statelessclient/statelessclient.iml" />
