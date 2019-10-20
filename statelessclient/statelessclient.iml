@@ -18,7 +18,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module" module-name="stateful" />
-    <orderEntry type="library" exported="" name="modules" level="application" />
     <orderEntry type="module" module-name="biblio" />
+    <orderEntry type="library" exported="" name="Glassfish" level="project" />
   </component>
 </module>
