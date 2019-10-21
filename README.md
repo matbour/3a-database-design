@@ -22,6 +22,7 @@ Use of the default `postgres/public` database.
 ### Glassfish 5.0
 - JDBC Connection Pool name: `postgresql_pool`
 - JDBC Resource name : `postgresql_resource`
+- JDBC Postgresql Driver: `postgresql-9.4.1212.jre6.jar`, placed in `glassfish5/glassfish/domains/domain1/lib` 
 
 ### Initial SQL
 
