@@ -7,7 +7,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="Glassfish" level="project" />
-    <orderEntry type="module" module-name="biblio" />
+    <orderEntry type="module" module-name="biblio" exported="" />
+    <orderEntry type="library" exported="" name="modules" level="application" />
+    <orderEntry type="library" exported="" name="glassfish5" level="project" />
   </component>
 </module>

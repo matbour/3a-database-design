@@ -6,12 +6,12 @@
              http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
 
     <persistence-unit name="persistenceBiblio">
-        <jta-data-source>ressource_pool_db</jta-data-source>
+        <jta-data-source>postgresql_resource</jta-data-source>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
-            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://172.17.0.3:5432/postgres"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost/biblio"/>
             <property name="javax.persistence.jdbc.user" value="postgres"/>
-            <property name="javax.persistence.jdbc.password" value="1234"/>
+            <property name="javax.persistence.jdbc.password" value="postgres"/>
         </properties>
     </persistence-unit>
 </persistence>
