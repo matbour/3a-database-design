@@ -8,17 +8,9 @@
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="stateless" />
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar:///opt/glassfish5/glassfish/lib/gf-client.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
     <orderEntry type="module" module-name="stateful" />
     <orderEntry type="module" module-name="biblio" />
-    <orderEntry type="library" exported="" name="Glassfish" level="project" />
+    <orderEntry type="library" name="modules" level="application" />
+    <orderEntry type="library" name="glassfish5" level="project" />
   </component>
 </module>

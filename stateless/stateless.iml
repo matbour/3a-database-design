@@ -7,6 +7,7 @@
     </content>
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="Glassfish" level="project" />
+    <orderEntry type="library" name="modules" level="application" />
+    <orderEntry type="library" name="glassfish5" level="project" />
   </component>
 </module>

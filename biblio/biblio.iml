@@ -6,10 +6,20 @@
         <setting name="validation-enabled" value="true" />
         <datasource-mapping>
           <factory-entry name="Entities" value="2d52787e-c09f-4d96-9716-7072c927501c" />
-          <factory-entry name="persistenceBiblio" />
+          <factory-entry name="persistenceBiblio" value="2d52787e-c09f-4d96-9716-7072c927501c" />
         </datasource-mapping>
         <naming-strategy-map />
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/META-INF/persistence.xml" />
+      </configuration>
+    </facet>
+    <facet type="ejb" name="EJB">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="ejb-jar.xml" url="file://$MODULE_DIR$/META-INF/ejb-jar.xml" />
+        </descriptors>
+        <ejbRoots>
+          <root url="file://$MODULE_DIR$/src" />
+        </ejbRoots>
       </configuration>
     </facet>
   </component>
@@ -20,7 +30,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Glassfish" level="application" />
-    <orderEntry type="library" exported="" name="Glassfish" level="project" />
+    <orderEntry type="library" name="glassfish5" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="GlassFish 5.0.0 - EJB" level="application_server_libraries" />
   </component>
 </module>
