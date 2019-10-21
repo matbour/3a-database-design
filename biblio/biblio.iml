@@ -20,7 +20,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="modules" level="application" />
-    <orderEntry type="library" exported="" name="glassfish5" level="project" />
+    <orderEntry type="library" name="glassfish5" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="GlassFish 5.0.0 - EJB" level="application_server_libraries" />
   </component>
 </module>
