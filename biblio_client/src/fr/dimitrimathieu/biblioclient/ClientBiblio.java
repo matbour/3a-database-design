@@ -10,7 +10,6 @@ import javax.naming.InitialContext;
 import javax.naming.NamingException;
 
 public class ClientBiblio {
-    private InitialContext initialContext;
     private IGestionLivre gestionLivre;
     private IGestionEmprunt gestionEmprunt;
     private IInfosLivre infosLivre;
@@ -21,7 +20,15 @@ public class ClientBiblio {
         // app.remplir();
 
         System.out.println("Test de la création d'un livre");
+        app.testListerLivres();
+        app.testCreationLivre();
+        app.testListerLivres();
+        System.out.println();
+
         System.out.println("Test de la suppression d'un livre");
+        app.testSuppressionLivre();
+        app.testListerLivres();
+        System.out.println();
 
         System.out.println("Test de la récupération d'un titre de livre par son ISBN avec une requête nommée @NamedQuery");
         app.testRecuperationParIsbn("555");
@@ -65,7 +72,7 @@ public class ClientBiblio {
 
     private void initialisation() {
         try {
-            initialContext = new InitialContext();
+            InitialContext initialContext = new InitialContext();
             gestionLivre = (IGestionLivre) initialContext.lookup(IGestionLivre.class.getName());
             gestionEmprunt = (IGestionEmprunt) initialContext.lookup(IGestionEmprunt.class.getName());
             infosLivre = (IInfosLivre) initialContext.lookup(IInfosLivre.class.getName());
@@ -74,10 +81,14 @@ public class ClientBiblio {
         }
     }
 
-    private void remplir() {
-        gestionLivre.nouveauLivre("777", "Livre 7");
-        gestionLivre.nouveauLivre("888", "Livre 8");
-        gestionLivre.nouveauLivre("999", "Livre 9");
+    private void testCreationLivre() {
+        System.out.println("> Création du livre (777, \"Test livre\", 1)");
+        gestionLivre.nouveauLivre("777", "Test livre");
+    }
+
+    private void testSuppressionLivre() {
+        System.out.println("> Suppression du livre 777");
+        gestionLivre.suppressionLivre("777");
     }
 
     private void testRecuperationParIsbn(String isbn) {
